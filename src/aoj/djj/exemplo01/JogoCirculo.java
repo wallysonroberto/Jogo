@@ -48,9 +48,9 @@ public class JogoCirculo extends Game implements KeyListener {
 	public JogoCirculo() {
 		getMainWindow().addKeyListener(this);
 		keyPool = new HashMap<Integer, Boolean>();
-		speedTemer = new Point(10, 10);
+		speedTemer = new Point(5, 5);
 		temer = new Point(10, 100);
-		money = new Point(50, 50);
+		money = new Point(random(getWidth()-100, 0),random(getHeight(), 0));
 		japa = new Point(200, 200);
 		ponto = 0;
 	}
