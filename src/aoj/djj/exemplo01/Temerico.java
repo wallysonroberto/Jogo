@@ -23,7 +23,7 @@ import javax.management.RuntimeErrorException;
 
 // Esta é a classe que representa nosso jogo. Ela é derivada de "Game", que
 // possui o motor do jogo e chama os métodos abaixo quando necessário.
-public class JogoCirculo extends Game implements KeyListener {
+public class Temerico extends Game implements KeyListener {
 	private BufferedImage imagemTemer;
 	private BufferedImage imagemMoney;
 	private BufferedImage imagemBg;
@@ -45,7 +45,7 @@ public class JogoCirculo extends Game implements KeyListener {
 	int sx;
 	int sy;
 
-	public JogoCirculo() {
+	public Temerico() {
 		getMainWindow().addKeyListener(this);
 		keyPool = new HashMap<Integer, Boolean>();
 		speedTemer = new Point(5, 5);
@@ -66,7 +66,7 @@ public class JogoCirculo extends Game implements KeyListener {
 			} else {
 				imagemBg = ImageIO.read(img);
 			}
-			 img = getClass().getResource("temer.jpeg");
+			 img = getClass().getResource("temer.png");
 			if (img == null) {
 				throw new RuntimeException("A imagem n foi detectada");
 			} else {
@@ -77,7 +77,7 @@ public class JogoCirculo extends Game implements KeyListener {
 				throw new RuntimeException("A imagem n foi detectada");
 			} else {
 				imagemMoney = ImageIO.read(img);
-			}img = getClass().getResource("japa.jpg");
+			}img = getClass().getResource("japa.png");
 			if (img == null) {
 				throw new RuntimeException("A imagem n foi detectada");
 			} else {

@@ -9,7 +9,7 @@ public class Main {
         // Tudo o que fazemos aqui é criar um objeto do tipo JogoCirculo e 
         // colocar ele para rodar.
         // Abra o arquivo JogoCirculo.java e veja seu código.
-        Game myGame = new JogoCirculo();
+        Game myGame = new Temerico();
         myGame.run();
         // Quando o jogo terminar de rodar, chegaremos aqui e o programa termina.
     }
